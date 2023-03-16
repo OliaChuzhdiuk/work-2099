@@ -1,0 +1,27 @@
+<section class="filter-box">
+  <app-svg-find class="svg-find"></app-svg-find>
+  <input
+    #inputSearch
+    class="filter"
+    type="text"
+    placeholder="Find my name"
+    (keyup)="onSearch(inputSearch.value)"
+    [(ngModel)]="searchText"
+  />
+</section>
+
+<section>
+  <ul class="conteiner">
+    <li
+      class="card"
+      *ngFor="let heroCard of characters | filter : searchText"
+      [routerLink]="['/info/' + heroCard.id]"
+    >
+      <div class="card_blok">
+        <img src="{{ heroCard.image }}" />
+        <h2 class="card_name">{{ heroCard.name }}</h2>
+        <p class="card_info">{{ heroCard.species }}</p>
+      </div>
+    </li>
+  </ul>
+</section>

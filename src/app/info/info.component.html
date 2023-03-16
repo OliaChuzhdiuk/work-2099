@@ -1,0 +1,36 @@
+<div class="svg-back" routerLink="/">
+  <app-back></app-back>
+  <a class="info_link">Go back</a>
+</div>
+<div class="info_box" *ngFor="let heroCard of characters">
+  <img class="foto" src="{{ heroCard.image }}" />
+  <h1 class="info_text">{{ heroCard.name }}</h1>
+  <h3 class="info_inform">Informations</h3>
+  <ul>
+    <li>
+      <h3 class="info_page">Gender</h3>
+      <p class="info_status">{{ heroCard.gender }}</p>
+      <hr />
+    </li>
+    <li>
+      <h3 class="info_page">Status</h3>
+      <p class="info_status">{{ heroCard.status }}</p>
+      <hr />
+    </li>
+    <li>
+      <h3 class="info_page">Specie</h3>
+      <p class="info_status">{{ heroCard.species }}</p>
+      <hr />
+    </li>
+    <li>
+      <h3 class="info_page">Origin</h3>
+      <p class="info_status">{{ heroCard.origin.name }}</p>
+      <hr />
+    </li>
+    <li>
+      <h3 class="info_page">Type</h3>
+      <p class="info_status">Unknown</p>
+      <hr />
+    </li>
+  </ul>
+</div>

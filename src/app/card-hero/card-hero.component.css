@@ -1,0 +1,84 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+.conteiner {
+  margin: 0 200px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2em;
+  justify-items: center; */
+}
+
+.card {
+  margin: 10px;
+  cursor: pointer;
+  align-self: stretch;
+  width: 240px;
+  list-style: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.card_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card_info {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+.filter {
+  width: 1020px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.filter-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.svg-find {
+  position: relative;
+  left: 40px;
+}
